@@ -8,4 +8,5 @@ url: https://git-scm.com/
 
 ```
 git init: **Inicia un nuevo repositorio Git en el directorio actual.**
+git clone: **Clona un repositorio Git existente a partir de una URL.**
 ```
