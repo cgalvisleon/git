@@ -35,9 +35,10 @@ git config --global alias.feat '! feat() { git add . && git commit -m "feat:$1" 
 git config --global alias.review '! review() { git add . && git commit -m "review:$1" && git push -u origin; }; review'
 git config --global alias.fix '! fix() { git add . && git commit -m "fix:$1" && git push -u origin; }; fix'
 git config --global alias.bug '! bug() { git add . && git commit -m "bug:$1" && git push -u origin; }; bug'
-
+# Basic commands
 git config --global alias.initial "! git add .; git commit -m 'Initial'; git push -u origin --all"
 git config --global alias.update "! git add .; git commit -m 'Update'; git push -u origin $1"
+git config --global alias.upd "! git add .; git commit -m 'Update'; git push -u origin $1"
 git config --global alias.backup "! git add .; git commit -m 'Backup'; git push -u origin $1"
 #Reset commit and preserve changes
 git config --global alias.rhs 'reset HEAD^ --soft'
