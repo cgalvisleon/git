@@ -3,6 +3,7 @@ version: "3"
 networks:
   net:
     name: proxy
+    external: true
 
 services:
   redis:
