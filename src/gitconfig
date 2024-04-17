@@ -29,6 +29,7 @@ git config --global alias.set "! git checkout $1"
 git config --global alias.del "! git branch -D $1"
 git config --global alias.lb "! git branch -v"
 git config --global alias.main "! git branch -M main"
+git config --global alias.pb "! git push --set-upstream origin $1"
 
 git config --global alias.prepare "! git add .; git commit -m Prepare"
 git config --global alias.feat '! feat() { git add . && git commit -m "feat:$1" && git push -u origin; }; feat'
