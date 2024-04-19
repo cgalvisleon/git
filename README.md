@@ -19,3 +19,18 @@ docker network create proxy
 docker-compose -p services -f ./images/local.yml up -d
 docker-compose -p services -f ./images/local.yml down
 ```
+
+## Go - Golang
+
+### Initial project
+
+```
+go mod init <name>
+```
+
+### Run project
+
+```
+go run ./main.go
+go run ./project/api/main.go
+```
