@@ -102,7 +102,7 @@ git checkout origin/nicolas -- pkg/fauresAreas/controlador.go
 
 ## Tags
 ```
-git tag clase.1
+git tag clase.2
 git push -u origin --tags
 
 Used abbreviation
