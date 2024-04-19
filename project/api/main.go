@@ -10,3 +10,7 @@ func main() {
 	fmt.Println(c)
 	fmt.Println("Hello, World!")
 }
+
+func Resta(a int, b int) int {
+	return a - b
+}
