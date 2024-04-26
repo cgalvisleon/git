@@ -28,4 +28,5 @@ image
 
 # Database folders
 images/dbdata
-*.mydb.db
+mydb.db
+*.db
