@@ -13,7 +13,8 @@ func main() {
 	g := Potencia(a, b)
 
 	fmt.Println("Hello, World!")
-	fmt.Sprintf("La suma de %d + %d es %d", a, b, c)
+	rm := fmt.Sprintf(`La suma de %d + %d es %d`, a, b, c)
+	fmt.Println(rm)
 	fmt.Sprintf("La resta de %d - %d es %d", a, b, d)
 	fmt.Sprintf("La suma de %d + %d es %d y la resta de %d - %d es %d", a, b, e, a, b, f)
 	fmt.Sprintf("La potencia de %d elevado a %d es %d", a, b, g)
