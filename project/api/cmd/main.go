@@ -14,17 +14,17 @@ import (
 func main() {
 	err := db.ConectDB()
 	if err != nil {
-		log.Panicln(err)
+		log.Fatal(err)
 	}
 
 	err = CreateTables()
 	if err != nil {
-		log.Panicln(err)
+		log.Fatal(err)
 	}
 
 	err = HttpServer()
 	if err != nil {
-		log.Panicln(err)
+		log.Fatal(err)
 	}
 }
 
@@ -33,7 +33,6 @@ func CreateTables() error {
 
 	err := formularios.CreateTable()
 	if err != nil {
-		log.Panicln(err)
 		return err
 	}
 
@@ -83,6 +82,8 @@ func HttpServer() error {
 		</body>
 		</html>`))
 	})
+
+	formularios.Routes(r)
 
 	handler := cors.AllowAll().Handler(r)
 	addr := ":3000"

@@ -17,7 +17,7 @@ func ConectDB() error {
 	}
 
 	var err error
-	Db, err = sql.Open("sqlte3", "mydb.db")
+	Db, err = sql.Open("sqlite3", "mydb.db")
 	if err != nil {
 		return err
 	}
@@ -27,7 +27,7 @@ func ConectDB() error {
 		return err
 	}
 
-	log.Panicln("Connected to database successfully")
+	log.Println("Connected to database successfully")
 
 	return nil
 }
