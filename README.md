@@ -43,3 +43,17 @@ git add .
 git commit -m "Actualiza gitignore y limpia caché"
 
 ```
+
+## Http server
+
+```
+go run ./project/api/cmd/main.go
+```
+
+### Dependencis
+
+```
+go get -u github.com/go-chi/chi/v5
+go get -u github.com/mattn/go-sqlite3
+go get -u github.com/rs/cors
+```
