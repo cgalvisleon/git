@@ -8,7 +8,7 @@ import (
 )
 
 func insertFormulario(w http.ResponseWriter, r *http.Request) {
-	log.Panicln("insertFormulario")
+	log.Println("insertFormulario")
 	body, _ := res.GetBody(r)
 
 	nombre := body["nombre"].(string)
