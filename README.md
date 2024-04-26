@@ -34,3 +34,12 @@ go mod init <name>
 go run ./main.go
 go run ./project/api/main.go
 ```
+
+### Git recoganice .gitignore
+
+```
+git rm -r --cached .
+git add .
+git commit -m "Actualiza gitignore y limpia caché"
+
+```

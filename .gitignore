@@ -27,4 +27,5 @@ image
 .vscode
 
 # Database folders
-./images/dbdata
+images/dbdata
+*.mydb.db
