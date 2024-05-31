@@ -3,6 +3,7 @@ package main
 import (
 	"api/pkg/db"
 	"api/pkg/formularios"
+	"api/pkg/imagenes"
 	"fmt"
 	"log"
 	"net/http"
@@ -32,6 +33,11 @@ func CreateTables() error {
 	log.Println("Creating tables")
 
 	err := formularios.CreateTable()
+	if err != nil {
+		return err
+	}
+
+	err = imagenes.CreateTable()
 	if err != nil {
 		return err
 	}
@@ -84,6 +90,7 @@ func HttpServer() error {
 	})
 
 	formularios.Routes(r)
+	imagenes.Routes(r)
 
 	handler := cors.AllowAll().Handler(r)
 	addr := ":3000"
